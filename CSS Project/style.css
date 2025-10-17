@@ -1,0 +1,52 @@
+  p {
+      color: #DC143C;
+      font-size: 20px;
+      border: 2px solid #9112BC;
+  }
+
+  #para1 {
+      color: #EB5B00;
+      border: 5px solid #EB5B00;
+      font-size: 100px;
+  }
+
+  .content {
+      background-color: #726f07;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  body {
+      background-color: black;
+  }
+
+  .navbar {
+      background-color: darkgreen;
+      color: wheat
+  }
+
+  .navbar a {
+      color: wheat
+  }
+
+  .navbar a {
+      text-decoration: none;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding: 20px;
+  }
+
+  .navbar li {
+      display: inline;
+      margin-right: 10px;
+  }
+
+  * {
+      color: #66f507;
+  }
+
+  h1,
+  p {
+      color: #9112BC;
+  }
+  
+  
