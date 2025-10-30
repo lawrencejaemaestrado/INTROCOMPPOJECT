@@ -2,37 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Davao Travel Guide</title>
-    <link rel="stylesheet" href="styling.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Davao Travel Guide</title>
+    <link rel="stylesheet" href="styling.css" />
 </head>
 
 <body>
-    <header>
-        <h1 class="one">Welcome to Davao Region</h1>
-        <nav>
-            <ul>
-                <li><a href="main page.html">Home</a></li>
-                <li><a href="second page.html">Destinations</a></li>
-                <li><a href="main page.html">Activities</a></li>
-                <li><a href="main page.html">History</a></li>
-                <li><a href="main page.html">Plan of your Threat</a></li>
-            </ul>
-        </nav>
+    
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLogin()">&times;</span>
+            <h2>Welcome Back!</h2>
+            <form>
+                <input type="text" placeholder="Username or Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+                <p class="note">By continuing, you agree to our Terms and Privacy Policy.</p>
+            </form>
+        </div>
+    </div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="main page.html">Davao Travel</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="main page.html">Home</a></li>
+                    <li><a href="second page.html">Destinations</a></li>
+                    <li><a href="third page.html">Activities</a></li>
+                    <li><a href="fourth page.html">History</a></li>
+                    <li><a href="five page.html">Plan Your Trip</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section>
-        <h2 class="two">Welcome to Davao Region</h2>
-        <p class="three">Davao Region is homme to the Mount Apo, Samal Island, and the majestic Philippine Eagle. Discover the beauty
-            and culture of Region XI!</p>
-    </section>
 
-    <section class="gallery">
-        <img src="samal.png" alt="Samal Island">
-        <img src="Mt_ Apo National Park - Davao, Philippines.jpg" alt="Mt">
-        <img src="Reptiles at Crocodile Park .png" alt="Crocodile Park">
-        <img src="Eden Nature Park.png" alt="Eden">
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-inner container">
+                <h1 class="hero-title">Explore Davao Region</h1>
+                <p class="hero-sub">Plan tours to dream locations — Mount Apo, Samal Island, and the majestic Philippine
+                    Eagle.</p>
+                <a class="btn" href="#">Explore Now</a>
+            </div>
+        </section>
+
+        <section class="features container">
+            <div class="feature">
+                <img src="samal.png" alt="Samal Island" />
+                <h3>Samal Island</h3>
+                <p>Beaches and resorts for relaxation.</p>
+            </div>
+            <div class="feature">
+                <img src="Mt_ Apo National Park - Davao, Philippines.jpg" alt="Mount Apo" />
+                <h3>Mount Apo</h3>
+                <p>Hike the highest peak in the Philippines.</p>
+            </div>
+            <div class="feature">
+                <img src="Reptiles at Crocodile Park .png" alt="Crocodile Park" />
+                <h3>Crocodile Park</h3>
+                <p>See reptiles and wildlife up close.</p>
+            </div>
+            <div class="feature">
+                <img src="Eden Nature Park.png" alt="Eden Nature Park" />
+                <h3>Eden Nature Park</h3>
+                <p>Nature trails and cool mountain air.</p>
+            </div>
+        </section>
+
+        <section class="reviews container">
+            <h3>Sign Up & See Reviews</h3>
+            <p class="muted">Real traveler reviews, tips and itineraries.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Davao Travel Guide</p>
+        </div>
+    </footer>
 </body>
 
 </html>
