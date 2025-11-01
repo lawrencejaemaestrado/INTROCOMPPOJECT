@@ -257,7 +257,7 @@ body {
   background: rgba(255, 255, 255, 0.04);
   padding: 10px;
   border-radius: 6px;
-  margin: 18px 0
+  margin: 18px 0;
 }
 
 .toc ul {
@@ -266,7 +266,12 @@ body {
   gap: 12px;
   list-style: none;
   padding: 8px 0;
-  margin: 6px 0
+  margin: 6px 0;
+  flex-wrap: wrap;
+  margin-bottom: 6px 0;
+  font-family: 'Times New Roman', Times, serif;
+  column-gap: 12px;
+  row-gap: 20px;
 }
 
 .toc a {
@@ -284,8 +289,8 @@ body {
   align-items: start;
   margin: 20px 0;
   padding: 18px;
-  background:#222;
- border-radius: 8px
+  background: #222;
+  border-radius: 8px
 }
 
 .activities .activity img {
@@ -318,6 +323,69 @@ body {
 
   .activities .activity img {
     height: 220px
+  }
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 18px 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.12);
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.timeline-date {
+  min-width: 120px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.78);
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.timeline-body h3 {
+  margin: 0 0 6px;
+  color: #fff;
+}
+
+.timeline-body p {
+  margin: 0;
+  color: #eee;
+}
+
+.timeline-item:hover {
+  transform: translateY(-4px);
+  transition: transform 220ms ease;
+}
+
+.history-highlights ul {
+  list-style: disc;
+  margin-left: 18px;
+  color: #fff;
+}
+
+.history-highlights li {
+  margin: 8px 0;
+}
+
+@media (max-width:700px) {
+  .timeline-item {
+    flex-direction: column;
+  }
+
+  .timeline-date {
+    min-width: auto;
+    align-self: flex-start;
   }
 }
 
